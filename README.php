@@ -5,7 +5,7 @@ require __DIR__ . '/src/autoload.php';
 /**
  * Prevents caching
  */
-$hash = sprintf('#%d', time());
+$hash = sprintf('?%d', time());
 
 ?>
 <!-- Yep, this README is completely over the top -->
