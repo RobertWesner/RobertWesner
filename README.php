@@ -9,12 +9,17 @@ $hash = sprintf('?%d', time());
 
 ?>
 <!-- Yep, this README is completely over the top -->
-<!-- don't mind me testing stuff -->
 <!--
 ## Who am I?
 
 Wish, I knew...
 -->
+
+## Knowledge
+
+I have been a full-time software developer since late 2019 and spend much of my time outside work honing these skills.
+
+You can find a complete timeline [here](https://robertwesner.github.io/knowledge/).
 
 ## Projects
 
