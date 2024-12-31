@@ -91,5 +91,27 @@ You can find more details on [scripts.yt](https://scripts.yt/).
 ) ?>
 
 
+### Games
+
+<?= Table::build(
+    ['Nonogram.ME (closed source)', ''],
+    [
+        [
+            sprintf(
+                <<<HTML
+                <div align="center">
+                    <a href="https://nonogram.me/">%s</a>
+                </div>
+                HTML,
+                Image::build(
+                    '/img/projects/games/nonogramme.png',
+                    'TODO ',
+                )
+            ),
+        ],
+    ],
+) ?>
+
+
 <br>
 <img src="/img/schmvs.png" alt="/ᐠ｡ꞈ｡ᐟ\">
