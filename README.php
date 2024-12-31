@@ -105,7 +105,7 @@ You can find more details on [scripts.yt](https://scripts.yt/).
                 HTML,
                 Image::build(
                     '/img/projects/games/nonogramme.png',
-                    'TODO ',
+                    'Nonogram.ME - Free Nonograms',
                 )
             ),
         ],
