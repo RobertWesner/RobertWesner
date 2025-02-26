@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="../../../image.css">
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+        font-size: 1.2em;
+    }
+
+    h1 {
+        margin: 0.4em 0
+    }
+
+    h1, p {
+        text-align: center;
+    }
+</style>
+<h1>Simple <img src="../../php.png" style="width: 80px; vertical-align: top"> MVC</h1>
+<p>
+    A simple back end for deploying semi static websites with twig.
+</p>
+<pre style="padding: 2rem; background-color: #232324; color: #ebdd94">
+<code>
+Route::get('/foo', function () {<br/>    return Route::render('bar.twig');<br/>});
+</code>
+</pre>
+<p>
+    <small>Syntactically inspired by <strong>Laravel</strong></small>
+</p>
