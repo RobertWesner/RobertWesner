@@ -72,7 +72,7 @@ You can find more details on [scripts.yt](https://scripts.yt/).
 ### PHP
 
 <?= Table::build(
-    ['AWDY', 'Simple PHP MVC'],
+    ['AWDY', 'Simple PHP MVC', 'Dependency Injection'],
     [
         [
             sprintf(
@@ -95,6 +95,17 @@ You can find more details on [scripts.yt](https://scripts.yt/).
                 Image::build(
                     '/img/projects/php/simplemvc.png',
                     'A simple PHP back end designed for semi-static content.',
+                )
+            ),
+            sprintf(
+                <<<HTML
+                <div align="center">
+                    <a href="https://github.com/RobertWesner/dependency-injection">%s</a>
+                </div>
+                HTML,
+                Image::build(
+                    '/img/projects/php/dependency-injection.png',
+                    'A fun PSR-11 container with autowiring.',
                 )
             ),
         ],

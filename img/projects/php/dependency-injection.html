@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="../../../image.css">
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+        font-size: 1.2em;
+    }
+
+    h1 {
+        margin: 0.4em 0
+    }
+
+    h1, p {
+        text-align: center;
+    }
+
+    code .attribute {
+        color: yellow;
+    }
+
+    code .variable {
+        color: #94adeb;
+    }
+
+    code .keyword {
+        color: #e7853d;
+    }
+
+    code .comment {
+        color: #838383;
+    }
+</style>
+<h1>Fun PSR-11 with autowiring</h1>
+<pre style="padding: 0.6rem; background-color: #232324; color: white; font-size: 0.8rem">
+<code>
+<span class="keyword">readonly class</span> Foo
+{
+    <span class="keyword">public function</span> __construct(
+        <span class="comment">// this will be autowired with all dependencies automagically</span>
+        <span class="keyword">private</span> Bar <span class="variable">$bar</span>,
+        <span class="attribute">#[AutowireValue(1234)]</span>
+        <span class="keyword">private int</span> <span class="variable">$scalar</span>,
+        <span class="attribute">#[AutowireEnv(__DIR__ . '/../../.env', 'TEST')]</span>
+        <span class="keyword">private string</span> <span class="variable">$envTest</span>,
+        <span class="attribute">#[AutowireJson(__DIR__ . '/../../foo.json', '$.test.value')]</span>
+        <span class="keyword">private int</span> <span class="variable">$val</span>,
+    ) {}
+}
+</code>
+</pre>
+<p>
+    <small>Syntactically inspired by <strong>Laravel</strong></small>
+</p>
