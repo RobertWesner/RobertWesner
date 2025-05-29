@@ -4,5 +4,5 @@
     cd "$(dirname "$0")/.."
 
     generated=$(php README.php)
-    printf "<!-- Generated File, do not edit -->\n$generated" > README.md
+    echo -n "<!-- Generated File, do not edit -->\n$generated" > README.md
 )

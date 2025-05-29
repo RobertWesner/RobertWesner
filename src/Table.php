@@ -9,8 +9,9 @@ final class Table
     public static function build(array $header, array $content): string
     {
         $result = '<tr>';
+        $width = 100 / count($header) . '%';
         foreach ($header as $column) {
-            $result .= sprintf('<th width="10000">%s</th>', $column);
+            $result .= sprintf('<th width="%s">%s</th>', $width, $column);
         }
         $result .= '</tr>';
 
