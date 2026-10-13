@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50mm"
+   height="50mm"
+   viewBox="0 0 50 50"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="kotlin.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.53317551"
+     inkscape:cx="407.93322"
+     inkscape:cy="17.817773"
+     inkscape:window-width="2560"
+     inkscape:window-height="1354"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="rect2"
+       style="opacity:1;fill:#8052fd;fill-opacity:1"
+       transform="matrix(0.83334631,0,0,0.83333333,4.1667316,4.1666667)">
+      <path
+         style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#8052fd;fill-opacity:1;stroke-linejoin:round;paint-order:stroke fill markers;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+         d="m 0,-5 a 5.0005,5.0005 0 0 0 -5,5 v 50 a 5.0005,5.0005 0 0 0 5,5 h 50 a 5.0005,5.0005 0 0 0 3.736328,-8.322266 L 32.9375,23.277344 53.458984,3.609375 A 5.0005,5.0005 0 0 0 50,-5 Z M 5,5 H 37.556641 L 22.541016,19.390625 a 5.0005,5.0005 0 0 0 -0.277344,6.931641 L 38.865234,45 H 5 Z"
+         id="path2" />
+      <path
+         style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#8052fd;fill-opacity:1;stroke-linejoin:round;paint-order:stroke fill markers;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+         d="M 0,0 H 50 L 26,23 50,50 H 0 Z"
+         id="path3" />
+    </g>
+  </g>
+</svg>

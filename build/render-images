@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+set -e
+
+file=$(realpath "$1")
+dir=$(dirname "$file")
+image="${file%.*}.png"
+
+case "$dir" in
+    */img/projects/*)
+        WIDTH=640
+        HEIGHT=360
+        ROUND=30
+        ;;
+    */img/quicklinks)
+        WIDTH=280
+        HEIGHT=60
+        ROUND=10
+        ;;
+    *)
+        exit 0
+        ;;
+esac
+
+mask=$(mktemp --suffix=.png)
+profile=$(mktemp -d)
+
+magick -size "${WIDTH}x${HEIGHT}" xc:none \
+    -draw "roundrectangle 0,0,$WIDTH,$HEIGHT,$ROUND,$ROUND" \
+    "$mask"
+
+# shellcheck disable=SC2016
+xvfb-run -a -s "-screen 0 ${WIDTH}x${HEIGHT}x24" \
+    bash -c '
+        chromium \
+            --ozone-platform=x11 \
+            --user-data-dir="$1" \
+            --no-first-run \
+            --kiosk \
+            --window-position=0,0 \
+            --window-size="$2,$3" \
+            "$4" >/dev/null 2>&1 &
+
+        pid=$!
+        trap "kill $pid 2>/dev/null || true" EXIT
+
+        sleep 3
+
+        magick import -window root "$5"
+        magick "$5" "$6" -alpha Set -compose DstIn -composite "$5"
+    ' _ "$profile" "$WIDTH" "$HEIGHT" "$file" "$image" "$mask"
